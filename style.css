@@ -1,0 +1,82 @@
+/*Algumas tags aqui no CSS, estão com um ponto antes da palavra, pois esse ponto me indica especificamnete, que estou modificando aquele devido texto do index do html*/
+
+body {
+    background-image: url(https://conceitosopticos.com.br/wp-content/uploads/2016/12/template-fundo-site-conseitos-opticos-4b.jpg);
+    background-size: auto auto;
+    font-family: 'Courier New';
+    height: auto;
+    width: auto;
+    
+    /*O (background-image) irá mudar a imagem de fundo do site, com a sub-função que estamos usando, a 'url()', ela me dá a possibilidade de pegar uma imagem da internet e alocar no fundo do site inteiro, pois foi alocado dentro da aba de css "body"*/
+
+    /*As porpriedades Heigth e Width são usadas para definir a Altura(vh) e Largura(vw) de um elemento no css. Link de pesquisa:
+    w3schools.com/css/css-dimension.asp*/
+
+    /*O 'vh' significa "viewnport-heigth, que é a medida de 1/100. Exemplo: se a altura do navegador é de 900px, 1vh equivale a 9px e, analogamente se a largura da viewport é de 750px 1vw (viewport-width) 7.5px*/
+     
+    /*já a função (font-family), 
+     ela muda o estilo de fonte que você quer no texto
+     as mais usadas são monospace, arial e sans-serif, nesse caso estou utilizando oura fonte, queé a courrier new*/
+
+    /*Dúvidas sobre as unidades: (copiar e colar)
+    turbosite.com.br/blog/conheca-as-unidades-de-css-css-rem-vh-vw-vmax-ex-ch*/
+}
+
+a {
+    color: lightblue;
+    text-decoration: none;
+
+    /*A função (text-decoration), faz com que mude 
+    a apresentação do seu texto dentro do site.
+    Nesse caso específico o (text-decoration), 
+    está escodendo o underline, que nesse caso só aparecerá quando for passado o mouse em cima do item*/
+
+    /*A função (color), está mudando a cor da letra, uma dica, a cada site, verifique a gama de cores do site que está trabalhando, para não colocar uma cor que esteja fora do espectro*/
+}
+a:hover {
+    text-decoration: underline;
+
+    /*A função (hover) será uma modificação 
+    que eu irei fazer na minha tag, no caso daqui a tag A.
+    No caso aqui, a cada vez que eu passar o mouse 
+    sobre os itens da tag, ele vai "decorar" o texto com uma underline, para destacar a palavra na qual estou interagindo */
+}
+
+.menu {
+    background-color: lightcoral;
+
+    /*No caso do (background-image), ele muda a cor de fundo
+    do meu "menu" que está no comando 'class', ele basicamente 
+    está colocando um fundo, para destacar o meu 'nav' dos 
+    "headers" no caso 'h1''h2' entre outros.*/
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+
+    /*A função (display) irá colocar os itens da 'ul' do html lado a lado, mas deixará eles muito juntos demais.*/
+    
+    /*Para poder separar os itens da tag 'ul' do html, nós usamos o (justify-content) que é uma função que me dará um espaço padrão entre os itens, ele possui várias sub-funções, a que estamos usando é a "space-around", que está nos dando um espaço padrão para nossos itens, tanto nas bordas, quanto no meio dos itens, tem outra função conhecida que o "space-between", que nos dá um espaço somente entre os itens, deixando as bordas coladas.*/
+}
+
+.menu li {
+    list-style: none;
+
+    /*A função (list-style), faz com que mude 
+    a apresentação do seu texto dentro do site.
+    Nesse caso específico, está escondendo os pontinhos, com a sub-função 'none' que a tag "li" coloca por padrão, quando você adiciona a mesma no index do html.*/
+}
+
+/*Caso eu tenha queira alterar algo, que precise das mesmas funções, eu posso colocar ',' para indicar mais de uma tag*/
+
+.site-title, .site-subtitle {
+    text-align: center;
+    color:tomato;
+}
+
+.site-subtitle {
+    font-style: italic;
+
+    /*A função (font-style), me proporciona mudar o estilo de texto que seja melhor*/
+}
